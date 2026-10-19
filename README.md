@@ -1,6 +1,6 @@
 # dsh-find-anywhere
 
-为 DeepSeek Harness Web UI 提供 `Ctrl+F` 式查找：在**当前对话**和**右侧面板**中搜索已渲染文本，高亮全部匹配，并在结果间循环定位。
+为 DeepSeek Harness 桌面版 UI https://github.com/deepseek-ai/deepseek-harness  提供 `Ctrl+F` 式查找：在**当前对话**和**右侧面板**中搜索已渲染文本，高亮全部匹配，并在结果间循环定位。
 
 包名 `@dsh-external/dsh-find-anywhere`，版本 `0.1.0`，纯浏览器实现。
 
