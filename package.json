@@ -1,0 +1,50 @@
+{
+  "name": "@dsh-external/dsh-find-anywhere",
+  "version": "0.1.0",
+  "description": "Ctrl+F 查找对话和右侧面板内容：高亮全部匹配、上一个/下一个定位，纯浏览器实现",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "MAINTENANCE.md"
+  ],
+  "scripts": {
+    "build": "bash scripts/build.sh"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "find",
+    "search",
+    "ctrl-f",
+    "right-panel"
+  ],
+  "author": "dsh-find-anywhere contributors",
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
